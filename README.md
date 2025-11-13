@@ -22,7 +22,7 @@ Este proyecto es una aplicación creada con **React + Vite** que muestra un curr
 
 ## Estructura del proyecto
 ```
-📁mi-app-react
+📁cv-andrea-florez
     └── 📁public
         └── vite.svg
          └── screenshot.png
