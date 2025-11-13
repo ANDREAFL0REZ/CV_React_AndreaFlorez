@@ -5,6 +5,7 @@ import './App.css';
 import HeaderCV from './components/HeaderCV/headerCV.jsx'; 
 import Profile from './components/profile/profile.jsx';
 import Experience from './components/Experience/experience.jsx';
+import Education from './components/Education/education.jsx';
 
 
 function App() {
@@ -53,6 +54,7 @@ function App() {
       />
 
       <Experience />
+      <Education />
       
     </>
   );
