@@ -1,16 +1,65 @@
-# React + Vite
+# CV Andrea Florez – Portafolio Personal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una aplicación creada con **React + Vite** que muestra un currículum vitae digital. Incluye secciones como perfil profesional, experiencia, educación y contacto, con un diseño moderno y responsivo.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🖼️ Vista previa
 
-## React Compiler
+![Captura del proyecto en navegador](./public/screenshot.png)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Tecnologías utilizadas
+
+- ⚛️ **React** – Librería para interfaces de usuario.  
+- ⚡ **Vite** – Herramienta de desarrollo rápida para React.  
+- 🎨 **CSS** – Estilos personalizados.  
+
+---
+
+## Estructura del proyecto
+src/
+  components/
+  HeaderCV/
+    HeaderCV.jsx
+    headerCV.css
+  Profile/
+    Profile.jsx
+    profile.css
+  Experience/
+    Experience.jsx
+    experience.css
+  Education/
+    Education.jsx
+    education.css
+App.jsx
+main.jsx
+index.css
+
+
+## Instrucciones para ejecutar el proyecto
+
+### 1️⃣ Clonar el repositorio
+```
+git clone https://github.com/ANDREAFL0REZ/CV_React_AndreaFlorez/tree/main/src/components
+cd cv-andrea-florez
+```
+
+### 2️⃣ Instalar dependencias
+```
+npm install
+```
+### 3️⃣Iniciar el servidor de desarrollo
+```
+npm run dev
+```
+
+### 4️⃣ Abrir en el navegador
+
+Haz clic en el enlace que aparece en la consola (generalmente):
+http://localhost:5173/
+
+
