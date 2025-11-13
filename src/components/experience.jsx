@@ -1,4 +1,3 @@
-import "./experience.css";
 
 export default function Experience({ items }) {
   // Si no se pasan datos desde App, usa estos por defecto
