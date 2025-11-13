@@ -1,4 +1,4 @@
-import "./profile.css";
+
 
 export default function Profile() {
   const descripcionPerfil =
