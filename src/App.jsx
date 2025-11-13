@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg';
 import './App.css';
 import HeaderCV from './components/HeaderCV/headerCV.jsx'; 
 import Profile from './components/profile/profile.jsx';
+import Experience from './components/Experience/experience.jsx';
 
 
 function App() {
@@ -51,6 +52,7 @@ function App() {
         habilidades={habilidadesPerfil} 
       />
 
+      <Experience />
       
     </>
   );
