@@ -21,23 +21,36 @@ Este proyecto es una aplicación creada con **React + Vite** que muestra un curr
 ---
 
 ## Estructura del proyecto
-src/
-  components/
-  HeaderCV/
-    HeaderCV.jsx
-    headerCV.css
-  Profile/
-    Profile.jsx
-    profile.css
-  Experience/
-    Experience.jsx
-    experience.css
-  Education/
-    Education.jsx
-    education.css
-App.jsx
-main.jsx
-index.css
+```
+📁cv-andrea-florez
+    └── 📁public
+        └── vite.svg
+         └── screenshot.png
+    └── 📁src
+        └── App.jsx
+        └── 📁components
+          └── 📁HeaderCV/
+                └── HeaderCV.jsx
+                └── headerCV.css
+           └── 📁Profile/
+                └── Profile.jsx
+                └──profile.css
+            └── 📁Experience/
+                  └── Experience.jsx
+                  └── experience.css
+             └── 📁Education/
+                  └── Education.jsx
+                  └──education.css
+        └── index.css
+        └── main.jsx
+    └── .gitignore
+    └── eslint.config.js
+    └── index.html
+    └── package-lock.json
+    └── package.json
+    └── README.md
+    └── vite.config.js
+```
 
 
 ## Instrucciones para ejecutar el proyecto
