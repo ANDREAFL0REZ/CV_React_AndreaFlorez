@@ -19,9 +19,19 @@ export default function Experience({ items }) {
     }
   ];
 
+  // Renderizado condicional si no hay experiencias
+  if (experiencias.length === 0) {
+    return (
+      <section className="experiencia">
+        <h3>Experiencia Profesional</h3>
+        <p>No se ha registrado experiencia profesional.</p>
+      </section>
+    );
+  }
+
   return (
     <section className="experiencia">
-      <h3>Experiencia</h3>
+      <h3>Experiencia Profesional</h3>
       {experiencias.map((exp, idx) => (
         <article key={idx} className="exp-item">
           <div className="exp-header">
