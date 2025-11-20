@@ -1,41 +1,35 @@
-// src/components/StackTecnologias/StackTecnologias.jsx
-import "./StackTecnologias.css";
-
 export default function StackTecnologias() {
-  const tecnologias = [
+    const tecnologias = [
     { id: 1, nombre: "React", tipo: "frontend" },
     { id: 2, nombre: "Node.js", tipo: "backend" },
     { id: 3, nombre: "JavaScript", tipo: "frontend" },
     { id: 4, nombre: "PostgreSQL", tipo: "base de datos" },
-    { id: 5, nombre: "HTML5 / CSS3", tipo: "frontend" },
-    { id: 6, nombre: "Git & GitHub", tipo: "control de versiones" }
-  ];
+    { id: 5, nombre: "Git", tipo: "otros" }
+];
 
-  // Función que devuelve la clase CSS según el tipo
-  const obtenerClaseColor = (tipo) => {
+    const obtenerColor = (tipo) => {
     switch (tipo) {
-      case "frontend":
-        return "color-blue";
-      case "backend":
-        return "color-green";
-      case "base de datos":
-        return "color-orange";
-      default:
-        return "color-gray";
+        case "frontend":
+        return "blue";
+        case "backend":
+        return "green";
+        case "base de datos":
+        return "orange";
+        default:
+        return "gray";
     }
-  };
+};
 
-  return (
-    <section className="stack-tecnologias">
-      <h3>Stack de Tecnologías</h3>
-      <ul className="tech-list">
+    return (
+    <section>
+        <h3>Stack de Tecnologías</h3>
+        <ul>
         {tecnologias.map((tech) => (
-          <li key={tech.id} className={`tech-item ${obtenerClaseColor(tech.tipo)}`}>
-            <span className="tech-nombre">{tech.nombre}</span>
-            <span className="tech-tipo">— {tech.tipo}</span>
-          </li>
+            <li key={tech.id} style={{ color: obtenerColor(tech.tipo) }}>
+            {tech.nombre} - <em>{tech.tipo}</em>
+            </li>
         ))}
-      </ul>
+        </ul>
     </section>
-  );
+    );
 }
