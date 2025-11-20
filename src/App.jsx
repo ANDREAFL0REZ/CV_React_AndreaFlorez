@@ -10,6 +10,7 @@ import StackTecnologias from "./components/StackTecnologias.jsx";
 
 
 function App() {
+
   const contacto = {
     telefono: "+57 300 0000000",
     email: "correo@ejemplo.com",
@@ -57,6 +58,25 @@ function App() {
       <Experience />
       <Education />
       <StackTecnologias />
+      
+      <div style={{ 
+        display: "flex",
+        gap: "20px",
+        flexWrap: "wrap",
+        justifyContent: "center",
+        marginTop: "2rem"
+      }}>
+        {usuarios.map(user => (
+          <UserCard 
+            key={user.id}
+            name={user.name}
+            email={user.email}
+            avatar={user.avatar}
+          />
+        ))}
+      </div>
+      
+
       
     </>
   );
