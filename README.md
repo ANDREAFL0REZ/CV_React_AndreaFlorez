@@ -4,7 +4,7 @@ Este proyecto es una aplicación creada con **React + Vite** que muestra un curr
 
 ---
 
-## 🖼️ Vista previa
+## 🖼️ Resulttado esperado
 
 ![Captura del proyecto en navegador](./public/screenshot.png)
 
