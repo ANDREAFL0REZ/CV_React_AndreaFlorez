@@ -27,20 +27,14 @@ Este proyecto es una aplicación creada con **React + Vite** que muestra un curr
         └── vite.svg
          └── screenshot.png
     └── 📁src
-        └── App.jsx
         └── 📁components
-          └── 📁HeaderCV/
+                └── Education.jsx
+                └── Experience.jsx
                 └── HeaderCV.jsx
-                └── headerCV.css
-           └── 📁Profile/
                 └── Profile.jsx
-                └──profile.css
-            └── 📁Experience/
-                  └── Experience.jsx
-                  └── experience.css
-             └── 📁Education/
-                  └── Education.jsx
-                  └──education.css
+                └── StackTecnologico
+        └── App.jsx
+        └── App.css
         └── index.css
         └── main.jsx
     └── .gitignore

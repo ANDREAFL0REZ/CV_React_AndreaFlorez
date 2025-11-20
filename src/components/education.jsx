@@ -1,4 +1,4 @@
-import "./education.css";
+
 
 export default function Education({ items }) {
   const education = items || [

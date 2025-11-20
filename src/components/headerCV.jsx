@@ -1,5 +1,4 @@
 import React from 'react';
-import './headerCV.css';
 
 export default function HeaderCV({ nombre, titulo, contacto }) {
   return (

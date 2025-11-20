@@ -1,9 +1,34 @@
+
+:root {
+  --bg-dark: #0f0f0f;
+  --bg-card: #1a1a1a;
+  --accent-purple: #5d2b8c;
+  --text-primary: #e2e8f0;
+  --text-secondary: #94a3b8;
+  --border-color: #5d2b8c;
+  --hover-bg: #252525;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-primary);
+  line-height: 1.6;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
 }
+
 
 .logo {
   height: 6em;
@@ -11,9 +36,11 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em var(--accent-purple));
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -33,10 +60,319 @@
   }
 }
 
+
 .card {
   padding: 2em;
 }
 
 .read-the-docs {
-  color: #a09999;
+  color: var(--text-secondary);
+}
+
+
+.header-cv {
+  text-align: center;
+  padding: 3rem 1rem;
+  background-color: var(--bg-card);
+  border: 2px solid var(--accent-purple);
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  box-shadow: 0 8px 32px rgba(168, 85, 247, 0.3);
+}
+
+.header-cv h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--accent-purple);
+  text-shadow: 2px 2px 4px rgba(168, 85, 247, 0.5);
+}
+
+.header-cv h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.header-cv .contacto {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin-top: 1rem;
+}
+
+section {
+  background-color: var(--bg-card);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  border-left: 4px solid var(--accent-purple);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(168, 85, 247, 0.3);
+}
+
+section h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: var(--accent-purple);
+  border-bottom: 2px solid var(--accent-purple);
+  padding-bottom: 0.5rem;
+  text-indent: 0;
+  text-align: right;
+}
+
+section h4 {
+  font-size: 1.3rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--accent-purple);
+  text-indent: 0;
+  text-align: right;
+}
+
+section p {
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+  text-indent: 0;
+  text-align: right;
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+
+
+.perfil p {
+  text-align: left !important;
+  direction: ltr !important;
+  unicode-bidi: normal !important;
+}
+
+.perfil ul {
+  list-style: none;
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+.perfil ul li {
+  padding: 0.8rem 1rem;
+  padding-left: 2.5rem;
+  background-color: var(--hover-bg);
+  border-radius: 8px;
+  position: relative;
+  color: var(--text-primary);
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+.perfil ul li::before {
+  content: "✓";
+  position: absolute;
+  left: 1rem;
+  color: var(--accent-purple);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.perfil ul li:hover {
+  background-color: var(--accent-purple);
+  color: white;
+  transform: translateX(8px);
+}
+
+.educacion .edu-item {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  padding-right: 2.5rem;
+  background-color: var(--hover-bg);
+  border-radius: 8px;
+  border-right: 3px solid var(--accent-purple);
+  transition: all 0.3s ease;
+}
+
+.educacion .edu-item:hover {
+  border-right-width: 6px;
+  background-color: rgba(168, 85, 247, 0.1);
+}
+
+.edu-header h4 {
+  margin: 0 0 0.5rem 0;
+  color: var(--accent-purple);
+  font-size: 1.3rem;
+  text-align: right;
+}
+
+.edu-header .institucion {
+  color: var(--text-primary);
+  font-weight: 500;
+  font-size: 1.1rem;
+  display: block;
+  text-align: right;
+}
+
+.edu-meta {
+  margin: 0.5rem 0 1rem 0;
+  text-align: right;
+}
+
+.edu-meta .anio {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  background-color: var(--accent-purple);
+  color: white;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.edu-item p {
+  text-indent: 0;
+  color: var(--text-secondary);
+  text-align: right;
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+
+/* ========================================
+   Experiencia
+======================================== */
+.experiencia .exp-item {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  padding-right: 2.5rem;
+  background-color: var(--hover-bg);
+  border-radius: 8px;
+  border-right: 3px solid var(--accent-purple);
+  transition: all 0.3s ease;
+}
+
+.experiencia .exp-item:hover {
+  border-right-width: 6px;
+  background-color: rgba(168, 85, 247, 0.1);
+}
+
+.exp-header h4 {
+  margin: 0 0 0.5rem 0;
+  color: var(--accent-purple);
+  font-size: 1.3rem;
+  text-align: right;
+}
+
+.exp-header .empresa {
+  color: var(--text-primary);
+  font-weight: 500;
+  font-size: 1.1rem;
+  display: block;
+  text-align: right;
+}
+
+.exp-meta {
+  margin: 0.5rem 0 1rem 0;
+  text-align: right;
+}
+
+.exp-meta .anio {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  background-color: var(--accent-purple);
+  color: white;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.exp-item p {
+  text-indent: 0;
+  color: var(--text-secondary);
+  text-align: right;
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+
+/* ========================================
+   Stack de Tecnologías
+======================================== */
+section ul {
+  list-style: none;
+  padding-right: 2rem;
+  padding-left: 0;
+}
+
+section ul li {
+  padding: 0.8rem;
+  margin-bottom: 0.5rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  background-color: var(--hover-bg);
+  text-align: left;
+}
+
+section ul li:hover {
+  transform: translateX(8px);
+  background-color: var(--accent-purple);
+}
+
+/* ========================================
+   UserCard
+======================================== */
+.user-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+/* ========================================
+   Responsive
+======================================== */
+@media (max-width: 768px) {
+  .header-cv h1 {
+    font-size: 2rem;
+  }
+
+  .header-cv h2 {
+    font-size: 1.2rem;
+  }
+
+  section {
+    padding: 1.5rem;
+  }
+
+  section h3 {
+    font-size: 1.5rem;
+  }
+
+  .perfil ul {
+    grid-template-columns: 1fr;
+  }
+
+  section p {
+    text-indent: 0;
+  }
+
+  .edu-item p,
+  .exp-item p {
+    text-indent: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  #root {
+    padding: 1rem;
+  }
+
+  .header-cv {
+    padding: 2rem 1rem;
+  }
+
+  .header-cv h1 {
+    font-size: 1.8rem;
+  }
 }
