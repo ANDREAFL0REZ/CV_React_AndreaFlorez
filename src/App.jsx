@@ -8,6 +8,7 @@ import Experience from './components/experience.jsx';
 import Education from './components/education.jsx';
 import StackTecnologias from "./components/StackTecnologias.jsx";
 import UserCard from './components/UserCard.jsx';
+import Technologies from './components/technologies.jsx';
 
 const usuarios = [
   {
@@ -73,6 +74,7 @@ function App() {
       <Experience />
       <Education />
       <StackTecnologias />
+      <Technologies/>
 
       <div style={{ 
         display: "flex",
