@@ -466,3 +466,27 @@ section ul li:hover {
   font-weight: 500;
   margin-top: 0.5rem;
 }
+
+/* ========================================
+   Responsive para TechStack
+======================================== */
+@media (max-width: 768px) {
+  .tech-grid {
+    grid-template-columns: repeat(auto-fit, minmax(520px, 1fr));
+    gap: 1rem;
+  }
+
+  .tech-item {
+    padding: 1rem;
+  }
+
+  .tech-gif {
+    width: 30px;
+    height: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .tech-grid {
+    grid-template-columns: repeat(2, 5fr);
+  }
+}
