@@ -481,8 +481,10 @@ section ul li:hover {
   }
 
   .tech-gif {
+
     width: 70px;
     height: 70px;
+
   }
 }
 @media (max-width: 480px) {
