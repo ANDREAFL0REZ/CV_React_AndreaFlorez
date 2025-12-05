@@ -472,7 +472,7 @@ section ul li:hover {
 ======================================== */
 @media (max-width: 768px) {
   .tech-grid {
-    grid-template-columns: repeat(auto-fit, minmax(520px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     gap: 1rem;
   }
 
@@ -481,12 +481,12 @@ section ul li:hover {
   }
 
   .tech-gif {
-    width: 30px;
-    height: 20px;
+    width: 70px;
+    height: 70px;
   }
 }
 @media (max-width: 480px) {
   .tech-grid {
-    grid-template-columns: repeat(2, 5fr);
+    grid-template-columns: repeat(1.5, 1fr);
   }
 }
