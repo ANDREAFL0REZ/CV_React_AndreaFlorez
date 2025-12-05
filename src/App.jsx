@@ -33,7 +33,7 @@ const usuarios = [
 
 function App() {
 
-  const contacto = {
+  const contactos = {
     telefono: "+57 300 0000000",
     email: "correo@ejemplo.com",
     ciudad: "Medellín"
@@ -58,9 +58,9 @@ function App() {
     <>
       
       <HeaderCV
-        nombre="Andrea Florez"
-        titulo="Desarrolladora Frontend"
-        contacto={contacto}
+        nombre="Andrea Florez Bedoya"
+        titulo="Desarrolladora Frontend Junior"
+        contacto={contactos}
       />
       <div style={{ textAlign: 'center', marginTop: '2rem' }}>
       
