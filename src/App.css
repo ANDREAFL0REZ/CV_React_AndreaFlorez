@@ -376,3 +376,93 @@ section ul li:hover {
     font-size: 1.8rem;
   }
 }
+/* ========================================
+   Stack de Tecnologías (TechStack Component)
+======================================== */
+.tech-stack {
+  background-color: var(--bg-card);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  border-left: 4px solid var(--accent-purple);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tech-stack:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(168, 85, 247, 0.3);
+}
+
+.tech-stack h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: var(--accent-purple);
+  border-bottom: 2px solid var(--accent-purple);
+  padding-bottom: 0.5rem;
+  text-align: right;
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem 0;
+}
+
+.tech-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 12px;
+  background-color: var(--hover-bg);
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.tech-item:hover {
+  transform: translateY(-8px);
+  border-color: var(--accent-purple);
+  background-color: rgba(168, 85, 247, 0.1);
+  box-shadow: 0 8px 24px rgba(168, 85, 247, 0.3);
+}
+
+.tech-gif {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  border-radius: 12px;
+  background-color: var(--bg-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+.tech-gif img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 0 8px rgba(168, 85, 247, 0.3));
+}
+
+.tech-item h4 {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+  color: var(--text-primary);
+  text-align: center;
+}
+
+.tech-level {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  background-color: var(--accent-purple);
+  color: white;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
